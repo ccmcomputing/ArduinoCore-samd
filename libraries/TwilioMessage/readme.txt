@@ -1,0 +1,2 @@
+1. Register a Twilio Account wiki - http://seeedstudio.com/wiki/LinkIt_ONE_Twilio_SMS_Demo_-_Register_a_Twilio_Account
+2. Register a Temboo account wiki - http://seeedstudio.com/wiki/LinkIt_ONE_Twilio_SMS_Demo_-_Register_a_Temboo_account

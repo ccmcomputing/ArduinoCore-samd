@@ -7,6 +7,4 @@
 [submodule "libraries/Seeed_Arduino_LCD"]
 	path = libraries/Seeed_Arduino_LCD
 	url = https://github.com/Seeed-Studio/Seeed_Arduino_LCD.git
-[submodule "libraries/Seeed_Arduino_FS"]
-	path = libraries/Seeed_Arduino_FS
-	url = https://github.com/Seeed-Studio/Seeed_Arduino_FS.git
+

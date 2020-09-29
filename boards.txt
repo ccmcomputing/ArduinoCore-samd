@@ -14,6 +14,7 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+menu.role=Role
 menu.cache=Cache
 menu.speed=CPU Speed
 menu.opt=Optimize
@@ -51,6 +52,10 @@ seeed_wio_terminal.build.pid=0x802D
 seeed_wio_terminal.bootloader.tool=openocd
 seeed_wio_terminal.bootloader.file=wio_terminal/bootloader-wio-terminal.bin
 seeed_wio_terminal.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+seeed_wio_terminal.menu.role.master=Master
+seeed_wio_terminal.menu.role.master.build.flags.role=-DROLE=0
+seeed_wio_terminal.menu.role.slave=Slave
+seeed_wio_terminal.menu.role.slave.build.flags.role=-DROLE=1
 seeed_wio_terminal.menu.cache.on=Enabled
 seeed_wio_terminal.menu.cache.on.build.cache_flags=-DENABLE_CACHE
 seeed_wio_terminal.menu.cache.off=Disabled
@@ -83,6 +88,7 @@ seeed_wio_terminal.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
 seeed_wio_terminal.menu.debug.off=Off
 seeed_wio_terminal.menu.debug.on=On
 seeed_wio_terminal.menu.debug.on.build.flags.debug=-g -DDEBUG=1
+
 
 # Seeed Femto M0 (SAMD21)
 # ------------------------------

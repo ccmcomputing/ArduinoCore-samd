@@ -288,6 +288,10 @@ static const uint8_t DAC1 = PIN_DAC1;
 #define PIN_WIRE_SCL (45ul)
 #define PERIPH_WIRE sercom3
 #define WIRE_IT_HANDLER SERCOM3_Handler
+#define WIRE_IT_HANDLER_0    SERCOM3_0_Handler
+#define WIRE_IT_HANDLER_1    SERCOM3_1_Handler
+#define WIRE_IT_HANDLER_2    SERCOM3_2_Handler
+#define WIRE_IT_HANDLER_3    SERCOM3_3_Handler
 
   static const uint8_t SDA = PIN_WIRE_SDA;
   static const uint8_t SCL = PIN_WIRE_SCL;
@@ -296,6 +300,10 @@ static const uint8_t DAC1 = PIN_DAC1;
 #define PIN_WIRE1_SCL (77ul)
 #define PERIPH_WIRE1 sercom4
 #define WIRE1_IT_HANDLER SERCOM4_Handler
+#define WIRE1_IT_HANDLER_0    SERCOM4_0_Handler
+#define WIRE1_IT_HANDLER_1    SERCOM4_1_Handler
+#define WIRE1_IT_HANDLER_2    SERCOM4_2_Handler
+#define WIRE1_IT_HANDLER_3    SERCOM4_3_Handler
 
   static const uint8_t SDA1 = PIN_WIRE1_SDA;
   static const uint8_t SCL1 = PIN_WIRE1_SCL;

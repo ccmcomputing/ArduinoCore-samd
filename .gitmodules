@@ -6,8 +6,10 @@
 	url = https://github.com/adafruit/Adafruit_TinyUSB_ArduinoCore.git
 [submodule "libraries/Seeed_Arduino_LCD"]
 	path = libraries/Seeed_Arduino_LCD
-	url = https://github.com/Seeed-Studio/Seeed_Arduino_LCD.git
+	url = git@github.com:colemarkham/Seeed_Arduino_LCD.git
 
 [submodule "libraries/Seeed_Arduino_FreeRTOS"]
 	path = libraries/Seeed_Arduino_FreeRTOS
 	url = https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS
+[submodule "libraries/Seeed_Arduino_LCD/"]
+	branch = freertos

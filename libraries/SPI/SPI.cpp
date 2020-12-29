@@ -249,6 +249,7 @@ void SPIClass::dmaCallback(Adafruit_ZeroDMA *dma) {
 void SPIClass::transfer(const void* txbuf, void* rxbuf, size_t count,
   bool block) {
 
+    #ifdef USE_SPIDMA
     // If receiving data and the RX DMA channel is not yet allocated...
     if(rxbuf && (readChannel.getChannel() >= DMAC_CH_NUM)) {
         if(readChannel.allocate() == DMA_STATUS_OK) {
@@ -288,6 +289,7 @@ void SPIClass::transfer(const void* txbuf, void* rxbuf, size_t count,
             spiPtr[writeChannel.getChannel()] = this;
         }
     }
+    #endif
 
     if(writeDescriptor && (readDescriptor || !rxbuf)) {
         static const uint8_t dum = 0xFF; // Dummy byte for read-only xfers
